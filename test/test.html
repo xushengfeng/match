@@ -1,0 +1,27 @@
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+
+<body>
+    <script src="../dist/match.umd.js"></script>
+    <script>
+        console.log(match("11", (a = 1) => 2, (a = "1") => 3, _ => _));
+
+        const arr = [1, 2, 3]
+
+        console.log(
+            arr.map(
+                a => match(a,
+                    (v = 1) => 'one',
+                    (v = 2) => 'two',
+                    (v = 3) => 'three'
+                )
+            )
+        )
+    </script>
+</body>
+
+</html>
